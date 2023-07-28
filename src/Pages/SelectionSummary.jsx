@@ -48,7 +48,7 @@ export default function SelectionSummary() {
       </div>
       <div className="col-lg-5 col-md-5 col-sm-5 col-12">
         {appointmentFormData ? (
-          <>
+          <div className="shadow p-5 rounded">
             <p>
               <strong>Patient's Name</strong>{" "}
               <span>{appointmentFormData.patientName}</span>
@@ -85,12 +85,12 @@ export default function SelectionSummary() {
               <strong>Appointment Time</strong>{" "}
               <span>{appointmentFormData.appointmentTime}</span>
             </p>
-          </>
+          </div>
         ) : (
           <p>Appointment Time</p>
         )}
       </div>
-      <div className="d-flex justify-content-between">
+      <div className="d-flex justify-content-between my-5">
         <button
           type="button"
           className="btn btn-primary"

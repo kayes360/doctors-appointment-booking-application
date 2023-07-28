@@ -76,7 +76,7 @@ export default function PatientForm() {
         <img src={PatientFormImg} className="img-fluid" alt="" />
       </div>
       <div className="col-lg-5 col-md-5 col-sm-5 col-12">
-        <form action="">
+        <form className='shadow p-5 rounded-4' action="">
           <div className="mb-3">
             <label htmlFor="patientName" className="form-label">
               Patient's Name

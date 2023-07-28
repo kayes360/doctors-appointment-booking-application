@@ -65,8 +65,7 @@ export default function TimeSelectionForm() {
     });
   };
   //formatting date to 12hr format string and store it to state
-  const handleTime = (selectedTime) => {
-    console.log("selectedTime",selectedTime)
+  const handleTime = (selectedTime) => { 
     const formattedTime = convertToTwelveHourFormat(selectedTime);
     setAppointmentFormData({
       ...appointmentFormData,
@@ -91,14 +90,15 @@ export default function TimeSelectionForm() {
   }, [
     isAppointmentScheduleFormSubmitted,
     isAppointmentScheduleFormValid 
-  ]);
-console.log("appointmentFormData.appointmentDate",appointmentFormData.appointmentTime)
+  ]); 
   return (
     <>
       <div className="col-lg-7 col-md-7 col-sm-7 col-12">
         <img src={TimeSelectionImg} className="img-fluid" alt="" />
       </div>
       <div className="col-lg-5 col-md-5 col-sm-5 col-12">
+        <form className="shadow p-5 rounded" action="">
+
         <div className="mb-3">
           <label htmlFor="patientName" className="form-label">
             Select Date For The Appointment
@@ -144,9 +144,10 @@ console.log("appointmentFormData.appointmentDate",appointmentFormData.appointmen
             </p>
           )}
         </div>
+        </form>
       </div>
 
-      <div className="d-flex justify-content-between">
+      <div className="d-flex justify-content-between my-5">
         <button
           type="button"
           className="btn btn-primary"
