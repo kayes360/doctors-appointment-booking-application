@@ -1,0 +1,22 @@
+ /* Chrome, Safari, Edge, Opera */
+.custom-input-number::-webkit-outer-spin-button,
+.custom-input-number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.custom-input-number[type=number] {
+  -moz-appearance: textfield;
+}
+
+.fade-in{
+  animation: fadeIn .5s
+}
+ 
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+ 
