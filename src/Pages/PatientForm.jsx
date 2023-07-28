@@ -26,7 +26,7 @@ export default function PatientForm() {
       !/^\d+$/.test(appointmentFormData.patientPhone.trim()) ||
       appointmentFormData.patientPhone.trim().length < 11
     ) {
-      newPatientFormErrors.patientPhone = "Please Enter Patient Valid Number";
+      newPatientFormErrors.patientPhone = "Please Enter Patient Valid 11 Digit Phone Number";
     }
     
     //Patient Email Validation
@@ -42,10 +42,10 @@ export default function PatientForm() {
     if (
       appointmentFormData.patientAge.trim() === "" ||
       isNaN(appointmentFormData.patientAge) ||
-      appointmentFormData.patientAge < 0 ||
+      appointmentFormData.patientAge <= 0 ||
       appointmentFormData.patientAge > 120
     ) {
-      newPatientFormErrors.patientAge = "Please Enter a Valid Age";
+      newPatientFormErrors.patientAge = "Please Enter a Valid Age between";
     } 
     
     //Patient Gender Validation
