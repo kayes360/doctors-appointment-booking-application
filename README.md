@@ -35,8 +35,6 @@ Next,  you are all set. Now run this project using this command-
 npm run dev
 ```
 
-Finally, paste this url in your browser address bar to view the project-
+Finally, paste the url from your console and paste it in your browser address bar to view the project- 
 
- ```bash
-http://localhost:5173/
-```
+ 
