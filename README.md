@@ -24,7 +24,7 @@ git clone https://github.com/kayes360/doctors-appointment-booking-application.gi
 ```
 Next navigate to the project direactory by using this command-
  ```bash
-cd assignment-for-fe
+cd doctors-appointment-booking-application
 ```
 Next, in the project directory run this command in cmd to install dependencies-
  ```bash
