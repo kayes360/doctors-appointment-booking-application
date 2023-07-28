@@ -20,7 +20,7 @@ If node and npm not installed please install node and npm .If they are installed
 After that clone this git repository by pasting the following command in your cmd-
 
  ```bash
-git clone https://github.com/kayes360/assignment-for-fe.git
+git clone https://github.com/kayes360/doctors-appointment-booking-application.git
 ```
 Next navigate to the project direactory by using this command-
  ```bash
