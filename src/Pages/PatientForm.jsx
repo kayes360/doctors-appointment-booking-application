@@ -45,7 +45,7 @@ export default function PatientForm() {
       appointmentFormData.patientAge <= 0 ||
       appointmentFormData.patientAge > 120
     ) {
-      newPatientFormErrors.patientAge = "Please Enter a Valid Age between";
+      newPatientFormErrors.patientAge = "Please Enter a Valid Age";
     } 
     
     //Patient Gender Validation
